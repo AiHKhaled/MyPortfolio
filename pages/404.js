@@ -16,7 +16,7 @@ const NotFound = () => {
       <Text>the page you&apos;ve been looking for doesn&apos;t exist</Text>
       <Divider my={6} />
       <Box my={6} align={'center'}>
-        <NextLink href="/">
+        <NextLink href="/" passHref>
           <Button colorScheme={'teal'}>Go Home</Button>
         </NextLink>
       </Box>

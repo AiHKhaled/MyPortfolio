@@ -4,7 +4,7 @@ import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import { Meta, Title, WorkImage } from '../../components/layouts/work'
 import P from '../../components/layouts/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import nextjslist from '../../public/images/nextjslist.png'
+import nextjslist from '/images/nextjslist.png'
 
 const Work = () => {
   return (
@@ -33,7 +33,7 @@ const Work = () => {
             <Meta>Stack</Meta>
             <span>NextJs, JSONPlaceholder</span>
           </ListItem>
-          <WorkImage src={'/images/nextjslist.png'} />
+          <WorkImage src={nextjslist} />
         </List>
       </Container>
     </Layout>

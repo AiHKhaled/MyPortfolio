@@ -15,7 +15,7 @@ import React from 'react'
 import Paragraph from '../components/layouts/paragraph'
 import Section from '../components/layouts/section'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { BioSection, BioYear, Title } from '../components/layouts/Bio'
+import { BioSection, BioYear } from '../components/layouts/Bio'
 import Layout from '../components/layouts/article'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 const Page = () => {
@@ -49,6 +49,7 @@ const Page = () => {
               boxSize="100px"
               objectFit="cover"
               src={'/images/pic.jpg'}
+              alt="alt"
             />
           </Box>
         </Box>
@@ -61,13 +62,13 @@ const Page = () => {
             praesentium atque in libero iste laboriosam eaque quidem, quos,
             obcaecati doloribus accusantium? Reprehenderit dignissimos quam
             dolorum quia eligendi mollitia vitae called&nbsp;
-            <NextLink href={'/works/nextlist'}>
+            <NextLink href={'/works/nextlist'} passHref>
               <Link>Inkdrop</Link>
             </NextLink>
             .
           </Paragraph>
           <Box align={'center'} my={4}>
-            <NextLink href={'/works'}>
+            <NextLink href={'/works'} passHref>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My Portfolio
               </Button>
@@ -86,8 +87,8 @@ const Page = () => {
               2015-2019 License degree in Math & Computer Science
             </BioYear>
             I picked this specialty as it was a continuation for my
-            bachelor&apos;s and it also combined two of my favorite fields
-            "math" and "computer science", hitting two birds with one stone.
+            bachelor&apos;s and it also combined two of my favorite fields math
+            and computer science, hitting two birds with one stone.
           </BioSection>
           <BioSection>
             <BioYear>
@@ -96,9 +97,9 @@ const Page = () => {
             </BioYear>
             I continued with my master, because I had a passion for learning new
             things, I was always curious and motivated, but I dropped a year
-            since I felt like I didn't belong to this field, but sometimes you
-            have to stick with somethings in order to find value in them, and
-            I'm glad I did.
+            since I felt like I didn&apos;t belong to this field, but sometimes
+            you have to stick with somethings in order to find value in them,
+            and I&apos;m glad I did.
           </BioSection>
         </Section>
         <Section delay={0.3}>
